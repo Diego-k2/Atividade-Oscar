@@ -116,14 +116,20 @@ Então vale mesmo a pena, premiar?
   
  
  <b>16)-Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?</b><br>
-<b>R: </b><br>
+<b>R: </b>Melhor atriz foi: Louise Dresser<br>
+          Melhor filme foi: Crouching Tiger\, Hidden Dragon<br>
+          Melhor diretor foi: Steven Soderbergh<br>
 <b>QUERY EM SQL</b><br>
-<code></code>
+<code>SELECT name, film, category FROM `oscar` WHERE category LIKE '%CINEMATOGRAPHY' OR category LIKE '%ACTRESS' OR category LIKE '%DIRECTING' AND winner LIKE '%1%' AND year_ceremony = '2001' GROUP BY category;</code>
   
 <br><br>
   
+ <b>17)-Agora procure 7 atrizes que não sejam americanas, europeias ou brasileiras.  Vamos cadastrá-los no nosso banco, mas eles ainda não ganharam o Oscar. Só foram nomeados.
+</b><br>
+<b>R: </b><code>INSERT INTO oscar (name) VALUES ('Cameron Diaz'), ('Drew Barrymore'), ('Sarah Polley'), ('Emily Blunt'), ('Robin Wright'), ('Charlotte Gainsbourg'), ('Kirsten Dunst');</code>  <br>
   
-  
+ <b>19)-Utilizando o comando 'Alter Table', troque os tipos dos dados da coluna/campo "Winner" para Bit.</b><br>
+<b>R: </b><code>ALTER TABLE oscar MODIFY COLUMN winner BINARY;</code>  <br>
   
   
   
