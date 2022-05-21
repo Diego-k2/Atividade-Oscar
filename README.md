@@ -39,7 +39,8 @@ Então vale mesmo a pena, premiar?
 
 <b>4)-Alguém já ganhou um Oscar e tem o seu primeiro nome??</b><br>
 <b>R: </b>Não <br>
-<b>QUERY EM SQL</b>
+
+<b>QUERY EM SQL</b><br>
 <code>SELECT COUNT(*) FROM oscar WHERE name LIKE '%Diego%' AND winner LIKE '%True%';</code>
 
 <br><br>
@@ -47,7 +48,7 @@ Então vale mesmo a pena, premiar?
 
 <b>5)-Toy Story 3 ganhou um Oscar em quais anos?/b><br>
 <b>R: </b>2010 <br>
-<b>QUERY EM SQL</b>
+<b>QUERY EM SQL</b><br>
 <code>SELECT name, year_film FROM oscar WHERE film LIKE '%Toy Story 3%' AND winner LIKE '%True%';</code>
 
 <br><br>
@@ -61,7 +62,7 @@ Então vale mesmo a pena, premiar?
  
 <b>7)-O primeiro Oscar para melhor Atriz foi para quem? Em que ano?/b><br>
 <b>R: </b>Janet Gaynor em 1928<br>
-<b>QUERY EM SQL</b>
+<b>QUERY EM SQL</b><br>
 <code>SELECT name, MIN(year_ceremony) FROM oscar WHERE category LIKE '%ACTRESS%' AND winner LIKE '%True%';</code>
 
 <br><br>
@@ -75,7 +76,7 @@ Então vale mesmo a pena, premiar?
  
 <b>9)-Em qual edição do Oscar "Crash" ganhou o prêmio?</b><br>
 <b>R: </b>Em 2006<br>
-<b>QUERY EM SQL</b>
+<b>QUERY EM SQL</b><br>
 <code>SELECT year_ceremony FROM oscar WHERE film LIKE '%Crash' AND winner LIKE '%1%';</code>
 
 <br><br>
@@ -92,7 +93,7 @@ Então vale mesmo a pena, premiar?
   
 <b>12)-O filme Central do Brasil aparece no Oscar?</b><br>
 <b>R: </b>Não<br>
-<b>QUERY EM SQL</b>
+<b>QUERY EM SQL</b><br>
 <code>SELECT * FROM oscar WHERE film LIKE '%Central do Brasil';</code>
   
 <br><br>
@@ -108,13 +109,18 @@ Então vale mesmo a pena, premiar?
 <br><br>
   
 <b>15)-Crie uma nova categoria de premiação. Qualquer prêmio que você queira dar. Agora vamos dar esses prêmios aos filmes que você cadastrou na questão acima.</b><br>
-<b>R: </b><code>ALTER TABLE oscas ADD curto BINARY;</code>  
+<b>R: </b><code>ALTER TABLE oscas ADD curto BINARY;</code>  <br>
 <b>R: </b><code>UPDATE oscar SET curto = 1 WHERE id BETWEEN 10396 AND 10403;</code>  
   
+<br><br>  
   
+ 
+ <b>16)-Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?</b><br>
+<b>R: </b><br>
+<b>QUERY EM SQL</b><br>
+<code></code>
   
-  
-  
+<br><br>
   
   
   
