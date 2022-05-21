@@ -114,8 +114,15 @@ Então vale mesmo a pena, premiar?
   
 <br><br>  
   
+  <b>16)-Qual foi o primeiro ano a ter um prêmio do Oscar?.</b><br>
+<b>R: </b> Em 1928 <br>
+<b>QUERY EM SQL</b><br>
+<code>SELECT MIN(year_ceremony) FROM oscar;</code>  
+  
+<br><br>  
+  
  
- <b>16)-Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?</b><br>
+ <b>17)-Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?</b><br>
 <b>R: </b>Melhor atriz foi: Louise Dresser<br>
           Melhor filme foi: Crouching Tiger\, Hidden Dragon<br>
           Melhor diretor foi: Steven Soderbergh<br>
@@ -124,11 +131,11 @@ Então vale mesmo a pena, premiar?
   
 <br><br>
   
- <b>17)-Agora procure 7 atrizes que não sejam americanas, europeias ou brasileiras.  Vamos cadastrá-los no nosso banco, mas eles ainda não ganharam o Oscar. Só foram nomeados.
+ <b>18)-Agora procure 7 atrizes que não sejam americanas, europeias ou brasileiras.  Vamos cadastrá-los no nosso banco, mas eles ainda não ganharam o Oscar. Só foram nomeados.
 </b><br>
 <b>R: </b><code>INSERT INTO oscar (name) VALUES ('Cameron Diaz'), ('Drew Barrymore'), ('Sarah Polley'), ('Emily Blunt'), ('Robin Wright'), ('Charlotte Gainsbourg'), ('Kirsten Dunst');</code>  <br>
   
- <b>19)-Utilizando o comando 'Alter Table', troque os tipos dos dados da coluna/campo "Winner" para Bit.</b><br>
+ <b>20)-Utilizando o comando 'Alter Table', troque os tipos dos dados da coluna/campo "Winner" para Bit.</b><br>
 <b>R: </b><code>ALTER TABLE oscar MODIFY COLUMN winner BINARY;</code>  <br>
   
   
