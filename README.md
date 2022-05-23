@@ -47,7 +47,7 @@ Então vale mesmo a pena, premiar?
 
 
 <b>5)-Toy Story 3 ganhou um Oscar em quais anos?/b><br>
-<b>R: </b>2010 <br>
+<b>R: </b>2011 <br>
 <b>QUERY EM SQL</b><br>
 <code>SELECT name, year_film FROM oscar WHERE film LIKE '%Toy Story 3%' AND winner LIKE '%True%';</code>
 
